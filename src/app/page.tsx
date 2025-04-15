@@ -1,14 +1,17 @@
+import Navbar from "@/components/navbar";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 
+
 export default function Page(){
   return(
+    <><Navbar />
     <main>
-      <section className="bg-dolphin-gray">
-        <div>
-          <h1 className="text-3xl font-bold underline">O tempo de estudo <br /> <span>nunca é perdido!</span></h1>
-          <p>Proporcionamos ferramentas e métodos de estudos eficazes para auxiliar <br /> estudantes à atingir seus objetivos acadêmicos e pessoais.</p>
+      <section className="imagemFundo h-[926px] flex items-center justify-center">
+        <div className="text-center text-white">
+          <h1 className="font-quando font-bold text-[70px]">O tempo de estudo <br /> <span className="text-[60px]">nunca é perdido!</span></h1>
+          <p className="text-[20px] text-justify my-5">Proporcionamos ferramentas e métodos de estudos eficazes para auxiliar <br /> estudantes à atingir seus objetivos acadêmicos e pessoais.</p>
           <Link href="#">
             <Button>Saiba Mais</Button>
           </Link>
@@ -24,8 +27,7 @@ export default function Page(){
           alt="Arte Conceitual Quem Somos"
           width={100}
           height={100}
-          quality={80}
-        />
+          quality={80} />
       </section>
       <section>
         <h2>Nossos Recursos</h2>
@@ -36,30 +38,27 @@ export default function Page(){
               alt="Arte Conceitual Calendário"
               width={100}
               height={100}
-              quality={80}
-            />
+              quality={80} />
             <h3>Calendário Personalizado</h3>
             <p>Com nosso calendário personalizado, você pode organizar seus estudos de forma prática e eficiente! Marque datas importantes, defina semanas dedicadas a matérias específicas e crie um cronograma adaptado às suas necessidades. Assim, você mantém o controle do seu progresso e garante um planejamento equilibrado até o dia da prova!</p>
           </div>
           <div className="card">
-            <Image 
+            <Image
               src={"/tarefa.png"}
               alt="Arte Conceitual Tarefa"
               width={100}
               height={100}
-              quality={80}
-            />
+              quality={80} />
             <h3>Tarefas</h3>
             <p>Nosso sistema de tarefas ajuda você a manter o foco e a disciplina nos estudos! Defina prazos para concluir exercícios, resumos e revisões, além de estipular um tempo limite para cada atividade. Assim, você gerencia melhor sua rotina, evita atrasos e garante um estudo mais organizado e produtivo!</p>
           </div>
           <div className="card">
-            <Image 
+            <Image
               src={"/lembretes.png"}
               alt="Arte Conceitual Lembrete"
               width={100}
               height={100}
-              quality={80}
-            />
+              quality={80} />
             <h3>Lembretes Automáticos</h3>
             <p>Nunca mais perca um prazo! Nosso sistema de lembretes envia notificações para avisar sobre tarefas pendentes, prazos chegando ao fim e horários de estudo. Assim, você se mantém no ritmo certo, sem esquecer nenhuma etapa do seu planejamento!</p>
           </div>
@@ -78,7 +77,7 @@ export default function Page(){
 
             <label htmlFor="email">E-mail (Obrigatório)</label>
             <input type="email" name="email" required />
-            
+
             <label htmlFor="mensagem">Mensagem (Obrigatório)</label>
             <textarea name="mensagem" id="mensagem" required></textarea>
 
@@ -87,17 +86,16 @@ export default function Page(){
             </Link>
           </form>
         </div>
-        <Image 
+        <Image
           src={"/faleConosco.png"}
           alt="Arte Conceitual Fale Conosco"
           width={100}
           height={100}
-          quality={80}
-        />
+          quality={80} />
       </section>
       <footer>
         <h1>Projeto de Trabalho de Conclusão de Curso - Estuda+ 2025.1</h1>
       </footer>
-    </main>
+    </main></>
   )
 }

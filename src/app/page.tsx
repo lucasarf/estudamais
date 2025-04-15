@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Home(){
+export default function Page(){
   return(
     <main>
       <section className="inicial">
@@ -19,7 +19,7 @@ export default function Home(){
           <p>Somos um time apaixonado por educação, comprometido em ajudar vestibulandos a organizarem seus estudos de forma eficiente e estratégica. Nosso objetivo é oferecer ferramentas e métodos que facilitam a gestão do tempo. o planejamento personalizado e a motivação ao longo da jornada. Acreditamos que a disciplina aliada a boas técnicas de estudo pode transformar o aprendizado e aumentar as chances de aprovação. Aqui, você encontra o suporte necessário para estudar de forma inteligente e alcançar seus objetivos!</p>
         </div>
         <Image
-          src={"#"}
+          src={"/quemSomos.png"}
           alt="Arte Conceitual Quem Somos"
           width={100}
           height={100}
@@ -31,7 +31,7 @@ export default function Home(){
         <div id="conteudo">
           <div className="card">
             <Image
-              src={"#"}
+              src={"/calendario.png"}
               alt="Arte Conceitual Calendário"
               width={100}
               height={100}
@@ -42,7 +42,7 @@ export default function Home(){
           </div>
           <div className="card">
             <Image 
-              src={"#"}
+              src={"/tarefa.png"}
               alt="Arte Conceitual Tarefa"
               width={100}
               height={100}
@@ -53,7 +53,7 @@ export default function Home(){
           </div>
           <div className="card">
             <Image 
-              src={"#"}
+              src={"/lembretes.png"}
               alt="Arte Conceitual Lembrete"
               width={100}
               height={100}
@@ -87,7 +87,7 @@ export default function Home(){
           </form>
         </div>
         <Image 
-          src={"#"}
+          src={"/faleConosco.png"}
           alt="Arte Conceitual Fale Conosco"
           width={100}
           height={100}

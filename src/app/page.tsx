@@ -4,16 +4,16 @@ import Link from "next/link";
 export default function Page(){
   return(
     <main>
-      <section className="inicial">
+      <section className="bg-dolphin-gray">
         <div>
-          <h1>O tempo de estudo <br /> <span>nunca é perdido!</span></h1>
+          <h1 className="text-3xl font-bold underline">O tempo de estudo <br /> <span>nunca é perdido!</span></h1>
           <p>Proporcionamos ferramentas e métodos de estudos eficazes para auxiliar <br /> estudantes à atingir seus objetivos acadêmicos e pessoais.</p>
           <Link href="#">
             <p>Saiba Mais</p>
           </Link>
         </div>
       </section>
-      <section className="quemSomos">
+      <section>
         <div id="texto">
           <h2>Quem Somos</h2>
           <p>Somos um time apaixonado por educação, comprometido em ajudar vestibulandos a organizarem seus estudos de forma eficiente e estratégica. Nosso objetivo é oferecer ferramentas e métodos que facilitam a gestão do tempo. o planejamento personalizado e a motivação ao longo da jornada. Acreditamos que a disciplina aliada a boas técnicas de estudo pode transformar o aprendizado e aumentar as chances de aprovação. Aqui, você encontra o suporte necessário para estudar de forma inteligente e alcançar seus objetivos!</p>
@@ -26,7 +26,7 @@ export default function Page(){
           quality={80}
         />
       </section>
-      <section className="recurso">
+      <section>
         <h2>Nossos Recursos</h2>
         <div id="conteudo">
           <div className="card">
@@ -64,7 +64,7 @@ export default function Page(){
           </div>
         </div>
       </section>
-      <section className="faleConosco">
+      <section>
         <div id="texto">
           <h2>Fale Conosco</h2>
           <p>Sua opinião é muito importante para nós! Queremos tornar sua experiência de estudo ainda melhor. Envie suas sugestões, ideias de melhoria, depoimentos, ou feedbacks - cada mensagem nos ajuda a crescer e oferecer um serviço mais eficiente para você. Agradecemos por fazer parte dessa jornada com a gente!</p>

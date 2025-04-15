@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -9,7 +10,7 @@ export default function Page(){
           <h1 className="text-3xl font-bold underline">O tempo de estudo <br /> <span>nunca é perdido!</span></h1>
           <p>Proporcionamos ferramentas e métodos de estudos eficazes para auxiliar <br /> estudantes à atingir seus objetivos acadêmicos e pessoais.</p>
           <Link href="#">
-            <p>Saiba Mais</p>
+            <Button>Saiba Mais</Button>
           </Link>
         </div>
       </section>

@@ -16,14 +16,14 @@ export default function Navbar(){
                 </div>
                 <div className="flex items-center gap-7 mr-5">
                     <div className="flex items-center gap-6 text-dark-green tracking-wide text-[15px] font-poppins">
-                        <Link href={"#"} className="hover:text-philippine-green hover:font-bold transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 text-shadow-md hover:text-shadow-none">Quem Somos</Link>
-                        <Link href={"#"} className="hover:text-philippine-green hover:font-bold transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 text-shadow-md hover:text-shadow-none">Recursos</Link>
-                        <Link href={"#"} className="hover:text-philippine-green hover:font-bold transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 text-shadow-md hover:text-shadow-none">Contato</Link>
+                        <Link href={"#"} className="links">Quem Somos</Link>
+                        <Link href={"#"} className="links">Recursos</Link>
+                        <Link href={"#"} className="links">Contato</Link>
                     </div>
                     <div className="flex items-center gap-5 text-dark-green tracking-wide text-[15px] font-poppins">
-                        <Link href={"#"} className="hover:text-philippine-green hover:font-bold transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 text-shadow-md hover:text-shadow-none">Entrar</Link>
+                        <Link href={"#"} className="links">Entrar</Link>
                         <Link href={"#"}>
-                            <Button className="bg-dark-green text-white tracking-wider text-[15px] font-poppins p-4 rounded-2xl hover:bg-philippine-green hover:font-bold hover:cursor-pointer transition duration-300 ease-in-out shadow-md">Cadastre-se</Button>
+                            <Button className="button font-bold hover:cursor-pointer">Cadastre-se</Button>
                         </Link>
                     </div>
                 </div>

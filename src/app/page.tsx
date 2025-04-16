@@ -7,27 +7,28 @@ import Link from "next/link";
 export default function Page(){
   return(
     <><Navbar />
-    <main>
+    <main className="bg-[#D9C6AC] flex flex-col gap-[100px]">
       <section className="imagemFundo h-[926px] flex items-center justify-center">
-        <div className="text-center text-white">
-          <h1 className="font-quando font-bold text-[70px]">O tempo de estudo <br /> <span className="text-[60px]">nunca é perdido!</span></h1>
-          <p className="text-[20px] text-justify my-5">Proporcionamos ferramentas e métodos de estudos eficazes para auxiliar <br /> estudantes à atingir seus objetivos acadêmicos e pessoais.</p>
+        <div className="text-center text-white flex flex-col items-center w-[80vw]">
+          <h1 className="font-quando font-bold text-[70px] tracking-[2px]">O tempo de estudo nunca é perdido!</h1>
+          <p className="text-[28px] text-justify my-[30px] font-quando w-[75%] font-bold tracking-[2px]">Proporcionamos ferramentas e métodos de estudos eficazes para auxiliar estudantes à atingir seus objetivos acadêmicos e pessoais.</p>
           <Link href="#">
-            <Button>Saiba Mais</Button>
+            <Button className="button font-bold hover:cursor-pointer tracking-normal text-xl">Saiba Mais</Button>
           </Link>
         </div>
       </section>
-      <section>
-        <div id="texto">
-          <h2>Quem Somos</h2>
-          <p>Somos um time apaixonado por educação, comprometido em ajudar vestibulandos a organizarem seus estudos de forma eficiente e estratégica. Nosso objetivo é oferecer ferramentas e métodos que facilitam a gestão do tempo. o planejamento personalizado e a motivação ao longo da jornada. Acreditamos que a disciplina aliada a boas técnicas de estudo pode transformar o aprendizado e aumentar as chances de aprovação. Aqui, você encontra o suporte necessário para estudar de forma inteligente e alcançar seus objetivos!</p>
+      <section className="flex items-center justify-center mx-[50px]">
+        <div id="texto" className="mr-[20px]">
+          <h2 className="font-bold font-quando text-center text-[50px] mb-[20px]">Quem Somos</h2>
+          <p className="text-justify font-roboto-serif tracking-wider text-[20px] leading-7">Somos um time apaixonado por educação, comprometido em ajudar vestibulandos a organizarem seus estudos de forma eficiente e estratégica. Nosso objetivo é oferecer ferramentas e métodos que facilitam a gestão do tempo. o planejamento personalizado e a motivação ao longo da jornada. Acreditamos que a disciplina aliada a boas técnicas de estudo pode transformar o aprendizado e aumentar as chances de aprovação. Aqui, você encontra o suporte necessário para estudar de forma inteligente e alcançar seus objetivos!</p>
         </div>
         <Image
           src={"/quemSomos.png"}
           alt="Arte Conceitual Quem Somos"
-          width={100}
-          height={100}
-          quality={80} />
+          width={700}
+          height={700}
+          quality={80} 
+        />
       </section>
       <section>
         <h2>Nossos Recursos</h2>

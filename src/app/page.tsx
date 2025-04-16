@@ -13,7 +13,7 @@ export default function Page(){
           <h1 className="font-quando font-bold text-[70px] tracking-[2px]">O tempo de estudo nunca é perdido!</h1>
           <p className="text-[28px] text-justify my-[30px] font-roboto-serif w-[75%] font-bold tracking-[2px]">Proporcionamos ferramentas e métodos de estudos eficazes para auxiliar estudantes à atingir seus objetivos acadêmicos e pessoais.</p>
           <Link href="#">
-            <Button className="button font-bold hover:cursor-pointer tracking-normal text-xl">Saiba Mais</Button>
+            <Button className="button hover:cursor-pointer tracking-normal text-xl">Saiba Mais</Button>
           </Link>
         </div>
       </section>

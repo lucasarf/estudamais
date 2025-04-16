@@ -181,6 +181,11 @@
     .button:hover{
         background-color: var(--color-philippine-green);
     }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @layer base {

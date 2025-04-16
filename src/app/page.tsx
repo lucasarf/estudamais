@@ -17,51 +17,66 @@ export default function Page(){
           </Link>
         </div>
       </section>
-      <section className="flex items-center justify-center mx-[50px]">
-        <div id="texto" className="mr-[20px]">
-          <h2 className="font-bold font-quando text-center text-[50px] mb-[20px]">Quem Somos</h2>
-          <p className="text-justify font-roboto-serif tracking-wider text-[20px] leading-7">Somos um time apaixonado por educação, comprometido em ajudar vestibulandos a organizarem seus estudos de forma eficiente e estratégica. Nosso objetivo é oferecer ferramentas e métodos que facilitam a gestão do tempo. o planejamento personalizado e a motivação ao longo da jornada. Acreditamos que a disciplina aliada a boas técnicas de estudo pode transformar o aprendizado e aumentar as chances de aprovação. Aqui, você encontra o suporte necessário para estudar de forma inteligente e alcançar seus objetivos!</p>
+      <section className="flex flex-col items-center justify-center mx-[50px] md:flex-row">
+        <div id="texto" className="m-[40px] w-[70vw] md:mr-[20px]">
+          <h2 className="font-bold font-quando text-center text-[35px] md:text-[50px] mb-[20px]">Quem Somos</h2>
+          <p className="text-justify font-roboto-serif tracking-wider text-[20px] leading-8">Somos um time apaixonado por educação, comprometido em ajudar vestibulandos a organizarem seus estudos de forma eficiente e estratégica. Nosso objetivo é oferecer ferramentas e métodos que facilitam a gestão do tempo. o planejamento personalizado e a motivação ao longo da jornada. Acreditamos que a disciplina aliada a boas técnicas de estudo pode transformar o aprendizado e aumentar as chances de aprovação. Aqui, você encontra o suporte necessário para estudar de forma inteligente e alcançar seus objetivos!</p>
         </div>
-        <Image
-          src={"/quemSomos.png"}
-          alt="Arte Conceitual Quem Somos"
-          width={700}
-          height={700}
-          quality={80} 
-        />
+        <div className="relative w-full h-[350px]">
+          <Image
+            src={"/quemSomos.png"}
+            alt="Arte Conceitual Quem Somos"
+            fill
+            quality={100}
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw"
+          />
+        </div>
       </section>
-      <section>
-        <h2>Nossos Recursos</h2>
-        <div id="conteudo">
-          <div className="card">
-            <Image
-              src={"/calendario.png"}
-              alt="Arte Conceitual Calendário"
-              width={100}
-              height={100}
-              quality={80} />
-            <h3>Calendário Personalizado</h3>
-            <p>Com nosso calendário personalizado, você pode organizar seus estudos de forma prática e eficiente! Marque datas importantes, defina semanas dedicadas a matérias específicas e crie um cronograma adaptado às suas necessidades. Assim, você mantém o controle do seu progresso e garante um planejamento equilibrado até o dia da prova!</p>
+      <section className="mx-[50px]">
+        <h2 className="text-left font-bold font-quando text-[35px] md:text-[50px] mb-[20px] tracking-[2px]">Nossos Recursos</h2>
+        <div className="w-full grid sm:grid-cols-2 lg:grid-cols-3 gap-7 my-[50px]">
+          <div className="card gap-4 font-roboto-serif">
+            <div className="relative w-full h-[350px]">
+              <Image
+                src={"/calendario.png"}
+                alt="Arte Conceitual Tarefa"
+                fill
+                quality={100}
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw"
+              />
+            </div>
+            <h3 className="font-bold underline text-2xl">Calendário Personalizado</h3>
+            <p className="text-[16px] text-justify">Com nosso calendário personalizado, você pode organizar seus estudos de forma prática e eficiente! Marque datas importantes, defina semanas dedicadas a matérias específicas e crie um cronograma adaptado às suas necessidades. Assim, você mantém o controle do seu progresso e garante um planejamento equilibrado até o dia da prova!</p>
           </div>
-          <div className="card">
-            <Image
-              src={"/tarefa.png"}
-              alt="Arte Conceitual Tarefa"
-              width={100}
-              height={100}
-              quality={80} />
-            <h3>Tarefas</h3>
-            <p>Nosso sistema de tarefas ajuda você a manter o foco e a disciplina nos estudos! Defina prazos para concluir exercícios, resumos e revisões, além de estipular um tempo limite para cada atividade. Assim, você gerencia melhor sua rotina, evita atrasos e garante um estudo mais organizado e produtivo!</p>
+          <div className="card gap-4 font-roboto-serif">
+            <div className="relative w-full h-[350px]">
+              <Image
+                src={"/tarefa.png"}
+                alt="Arte Conceitual Tarefa"
+                fill
+                quality={100}
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw"
+              />
+            </div>
+            <h3 className="font-bold underline text-2xl">Tarefas</h3>
+            <p className="text-[16px] text-justify">Nosso sistema de tarefas ajuda você a manter o foco e a disciplina nos estudos! Defina prazos para concluir exercícios, resumos e revisões, além de estipular um tempo limite para cada atividade. Assim, você gerencia melhor sua rotina, evita atrasos e garante um estudo mais organizado e produtivo!</p>
           </div>
-          <div className="card">
-            <Image
-              src={"/lembretes.png"}
-              alt="Arte Conceitual Lembrete"
-              width={100}
-              height={100}
-              quality={80} />
-            <h3>Lembretes Automáticos</h3>
-            <p>Nunca mais perca um prazo! Nosso sistema de lembretes envia notificações para avisar sobre tarefas pendentes, prazos chegando ao fim e horários de estudo. Assim, você se mantém no ritmo certo, sem esquecer nenhuma etapa do seu planejamento!</p>
+          <div className="card gap-4 font-roboto-serif">
+            <div className="relative w-full h-[350px]">
+              <Image
+                src={"/lembretes.png"}
+                alt="Arte Conceitual Tarefa"
+                fill
+                quality={100}
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw"
+              />
+            </div>
+            <h3 className="font-bold underline text-2xl">Lembretes Automáticos</h3>
+            <p className="text-[16px] text-justify">Nunca mais perca um prazo! Nosso sistema de lembretes envia notificações para avisar sobre tarefas pendentes, prazos chegando ao fim e horários de estudo. Assim, você se mantém no ritmo certo, sem esquecer nenhuma etapa do seu planejamento!</p>
           </div>
         </div>
       </section>

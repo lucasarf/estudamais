@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 
 export default function Navbar(){
     return(
-        <header className="fixed w-full p-5 glass">
+        <header className="fixed w-full p-5 glass z-10">
             <nav className="flex items-center justify-between mr-5">
                 <div>
                     <Image

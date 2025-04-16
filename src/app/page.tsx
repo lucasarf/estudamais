@@ -8,10 +8,10 @@ export default function Page(){
   return(
     <><Navbar />
     <main className="bg-[#D9C6AC] flex flex-col gap-[100px]">
-      <section className="imagemFundo glass h-[926px] flex items-center justify-center">
+      <section className="imagemFundo h-[800px] flex items-center justify-center">
         <div className="text-center text-white flex flex-col items-center w-[80vw]">
           <h1 className="font-quando font-bold text-[50px] tracking-[2px]">O tempo de estudo nunca é perdido!</h1>
-          <p className="text-[20px] text-justify my-[30px] font-roboto-serif w-[75%] font-bold tracking-[2px]">Proporcionamos ferramentas e métodos de estudos eficazes para auxiliar estudantes à atingir seus objetivos acadêmicos e pessoais.</p>
+          <p className="text-[20px] text-justify my-[30px] font-roboto-serif w-[75%] tracking-[2px]">Proporcionamos ferramentas e métodos de estudos eficazes para auxiliar estudantes à atingir seus objetivos acadêmicos e pessoais.</p>
           <Link href="#">
             <Button className="button hover:cursor-pointer tracking-normal text-[20px]">Saiba Mais</Button>
           </Link>

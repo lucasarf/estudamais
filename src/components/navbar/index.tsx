@@ -15,14 +15,9 @@ export default function Navbar(){
                     />
                 </div>
                 <div className="flex items-center gap-7 mr-5">
-                    <div className="flex items-center gap-6 text-dark-green tracking-wide text-[15px] font-poppins">
-                        <Link href={"#"} className="links">Quem Somos</Link>
-                        <Link href={"#"} className="links">Recursos</Link>
-                        <Link href={"#"} className="links">Contato</Link>
-                    </div>
                     <div className="flex items-center gap-5 text-dark-green tracking-wide text-[15px] font-poppins">
-                        <Link href={"#"} className="links">Entrar</Link>
-                        <Link href={"#"}>
+                        <Link href={"/login"} className="links">Entrar</Link>
+                        <Link href={"/cadastro"}>
                             <Button className="button font-bold hover:cursor-pointer">Cadastre-se</Button>
                         </Link>
                     </div>
